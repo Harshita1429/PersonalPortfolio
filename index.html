@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+  	*{
+  	margin: 0; padding:0; box-sizing: border-box;
+  	font-family: 'Roboto Slab', serif;
+  	}
+  	html{
+  		scroll-behavior: smooth;
+  	}
+  	header{
+     background-image: linear-gradient(to bottom,#116466,#E1E8E2);
+  	}
+  	.navbar-brand{
+  		width: 40%;
+  	}
+  	.navbar-collapse{
+  		margin-right: auto;
+  	}
+    .text-center{
+    	margin:auto;
+
+    }
+    button:hover{
+    	opacity: .50;
+    	color: black;
+    }
+    @media screen and (min-width: 768px)
+    {
+    	.card{
+    		width: 50%;
+    	}
+    	form{
+    		margin-right: 200px;
+    		width: 100%;
+    	}
+    	#contact{
+         width: 100%;
+    	}
+    }
+    #foot{
+    	background-image: linear-gradient(to bottom,#E1E8E2,#116466);
+
+    }
+    input[type=text],select,textarea{
+	width: 100%;
+	padding: 10px;
+	border:2px solid black;
+	box-sizing: border-box;
+	margin-top: 7px;
+	margin-bottom: 17px;
+    background-color: white;
+    border-radius:10px;
+}
+input[type=submit]{
+	background-color: white;
+	color: grey;
+	border: 2px solid black;
+	padding: 10px;
+	text-align: center;
+	border-radius: 8px;
+}
+input[type=submit]:hover{
+	opacity: .50;
+	color: black;
+}
+</style>
+</head>
+<body onload="myFuntion()">
+<header>
+<div class="container-fluid">	
+<div class="row d-flex">
+<nav class="navbar navbar-expand-sm w-100 d-flex navbar-dark">
+		<a href="index.html" class="navbar-brand" style="color:white; font-family:cursive; font-size: 24px;">Portfolio</a>
+		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsenavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse text-center" id="collapsenavbar">
+			<ul class="navbar-nav  ml-auto text-uppercase d-flex">
+				<li class="navbar-item  mx-2 p-2">
+					<a href="#about" class="navbar-link text-light text-decoration-none">About</a></li>
+				<li class="navbar-item mx-2 p-2">
+                    <a href="#skills" class="navbar-link text-light text-decoration-none">Skills</a>
+				</li>
+				<li class="navbar-item mx-2 p-2">
+				 <a href="#projects" class="navbar-link text-light text-decoration-none"> Projects</a></li>
+				<li class="navbar-item mx-2 p-2">
+					<a href="#contact" class="navbar-link  text-light text-decoration-none"> Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<div class="row">	
+<div class=" align-self-center pb-2" style="width: 100vw; padding-top: 10px; margin-top: 40px; position: relative;">
+	<div class="text-center text-dark">
+     <img src="circle.png" width="300px" height="300px">
+    <h5 class=" display-6 font-weight-normal" id="demo">Hello, my name is Harshita Rathore</h5>
+    <h4 class="display-6 font-weight-normal">Strategically Oriented and a Front-End Developer</h4>
+    <h6>Find me on:</h6>
+     <div class="d-flex  justify-content-center">
+				<div class="social">
+					<a href="https://linkedin.com/in/harshita-rathore-b922051b2" target="_blank" class=" d-flex text-decoration-none text-dark  mx-2">
+            <i class="fa fa-linkedin" aria-hidden="true" style="font-size: 24px"></i>
+        </a>
+	    </div>
+	    <div class="social">
+					<a href="https://github.com/Harshita1429" target="_blank" class=" d-flex text-decoration-none text-dark  mx-2">
+            <i class="fa fa-git" aria-hidden="true" style="font-size: 24px"></i>
+        </a>
+	    </div>
+           </div>
+           <button  style="border: 2px solid white; border-radius: 20px;margin-top: 10px; padding: 10px; background-color: #116466;">
+           	<a href="#contact" style="color: white;text-decoration: none; margin-right: auto;">Contact Me</a>
+           </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 100 20">
+<path fill="#E1E8E2" d="M 0 20 L 0 0 L 100 0 L 100 20 L 50 10 L 0 20 Z 0 0">
+</svg>
+<h2 class="text-center font-weight-bold" style="text-shadow: 2px 2px grey; text-transform: uppercase; ">About Me</h2>
+<div class=" container-fluid" style="margin-top: 40px;" id="about">
+<div class="row">	
+<div class="col-12 col-md-6">
+	<h4 style=" font-weight: bold;">Hi! My name is Harshita Rathore</h4>
+	<p style="font-size: 15px;">I am a final year student of Bachelor of Technology in Computer Science. I have been flourishing myself  in Front-End Development to make responsive website for an optimal user interface that achieves the project goal. I aim to make a website that is  fast,easy to find and reach the widest audience possible. I write code that is accessible,easy to maintain,search-engine friendly and responsive. I am always ready to learn and work on new technologies with new people.</p>
+	<ul class="text-decoration-none" style="list-style-type:none">
+		<li>Age: 20</li>
+		<li>City: Indore</li>
+		<li>Interest: Photography, Dancing</li>
+		<li>Degree: Bachelor of Technology</li>
+		<li>Email: rathoreharshita29@gmail.com</li>
+	</ul>
+</div>
+<div class="col-12 col-md-6" id="skills">
+<h4 class="font-weight-bold">My Skills</h4>
+	<div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">HTML
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    </div>
+     <span style="margin-top: 12px;">80%</span>
+  </div><br>
+  <div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">CSS
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    </div>
+     <span style="margin-top: 12px;">70%</span>
+  </div><br>
+  <div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">BS-4
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+    </div>
+     <span style="margin-top: 12px;">60%</span>
+  </div><br>
+   <div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:12%">MYSQL
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    </div>
+     <span style="margin-top: 12px;">70%</span>
+  </div><br>
+  <div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">C
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+    </div>
+     <span style="margin-top: 12px;">60%</span>
+  </div><br>
+   <div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">C++
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+    </div>
+     <span style="margin-top: 12px;">40%</span>
+  </div><br>
+   <div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:14%">PYTHON
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+    </div>
+     <span style="margin-top: 12px;">40%</span>
+  </div><br>
+    <div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">DS
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    </div>
+     <span style="margin-top: 12px;">50%</span>
+  </div><br>
+  <div class="progress" style="height: 25px;">
+		 <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">JS
+    </div>
+    <div class=" progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    </div>
+     <span style="margin-top: 12px;">50%</span>
+  </div>
+</div>
+</div>
+</div>
+<h2 class=" text-center text-uppercase pt-5 font-weight-bold" id="projects" style="text-shadow: 2px 2px grey">Projects</h2>
+<div class="container-fluid">
+	<div class="row">
+	<div class=" col-10 col-md-6 mx-auto mx-md-0  mb-5">
+		<div class="card shadow-lg mx-auto  align-self-center p-3" >
+     <img  class="card-img-top"src="feedback.png">
+     	<h5 class="card-title mt-3"><b>Feedback System</b></h5>
+     	<p class="card-text">I have developed the front-end for this project using HTML, CSS and Bootstrap-4. I also designed its database system.</p>
+     	<button style="width: 40%;background-color: #E1E8E2; margin-bottom: 10px; border-radius: 6px">
+     		<a href="" style="text-decoration: none; color: black">See Project</a>
+     	</button>
+     </div>
+ </div>
+     <div class=" col-10 col-md-6 mx-auto  mx-md-0 mb-5">
+     	<div class="card shadow-lg mx-auto p-3">
+     <img  class="card-img-top"src="port2.png">
+     	<h5 class="card-title mt-3"><b>Personal Portfolio</b></h5>
+     	<p class="card-text">I have designed and developed my personal portfolio. I used HTML, CSS, Bootstrap-4 and JavaScript.</p>
+     	<button style="width: 40%; background-color:#E1E8E2; margin-bottom: 10px;  border-radius: 6px">
+     	<a href="" style="text-decoration: none; color: black">See Project</a>
+     </button>
+ </div>
+</div>
+</div>
+</div>
+<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 100 20">
+<path fill="#E1E8E2" d="M 0 0 L 0 20 L 100 20 L 100 00 L 50 10 L 0 0 Z 0 0">
+</svg>
+<div class="container-fluid" id="foot">
+<div class="row" id="row" style="margin-right: auto; margin-left: auto;">
+	<div class="col-12 col-md-6" id="contact" style=" width: 100%; margin-right: auto; margin-left: auto;">
+	<form class="justify-content-center" style="box-shadow: 2px; width: 100%">
+		<h2 class=" heading text-uppercase text-center font-weight-bold" style="text-shadow: 2px 2px grey">Contact</h2>
+		<label for="fname"> <b>First Name</b></label>
+		<input type="text" name="firstname" placeholder="Your first name">
+
+		<label for="lname"><b>Last Name</b></label>
+		<input type="text" name="lastname" placeholder="Your last name">
+          
+        
+
+		<label for="subject"><b>Subject</b></label>
+		<textarea type="text" name="subject" placeholder="write something here..." style="height:200px;"></textarea>      
+		<input type="SUBMIT" name="SUBMIT" style="background-color:#E1E8E2; width: 100%;">
+	</form>
+</div>		
+</div>
+<footer class="mt-5">
+	<h5 class="text-center font-weight-normal">@ Created by Harshita Rathore</h5>
+</footer>
+</div>
+</div>
+</body>
+</html>
